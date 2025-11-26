@@ -1,0 +1,26 @@
+{
+    "name": "k1ssorkys/server-php",
+    "description": "server",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "k1ssorkys",
+            "email": "crackcobain34@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0",
+        "illuminate/database": "12.x-dev",
+        "illuminate/events": "12.x-dev",
+        "nikic/fast-route": "^2.0@dev",
+        "k1ssorkys/validator": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "core/Src/",
+            "": "app/"
+        }
+    }
+}
