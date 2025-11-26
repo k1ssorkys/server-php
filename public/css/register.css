@@ -1,74 +1,96 @@
+:root {
+    --primary: #2c5530;
+    --secondary: #4a7c59;
+    --accent: #8fb996;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f2f5;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .register-container {
     background: white;
-    padding: 2rem 3rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 320px;
-}
-
-h2, h3 {
+    padding: 45px 40px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 440px;
     text-align: center;
-    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-form {
+.register-container h2 {
+    color: #764ba2;
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.register-container pre {
+    color: #e74c3c;
+    margin-bottom: 25px;
+    font-size: 14px;
+    background: #fef2f2;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #fed7d7;
+    white-space: pre-wrap;
+    font-family: inherit;
+}
+
+.register-container form {
     display: flex;
     flex-direction: column;
+    gap: 24px;
 }
 
-label {
-    margin-bottom: 1rem;
-    font-weight: bold;
+.register-container label {
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
-input[type="text"],
-input[type="password"] {
-    padding: 0.6rem;
-    margin-top: 0.3rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.register-container input {
+    padding: 14px 16px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
     width: 100%;
+    font-family: inherit;
 }
 
-button {
-    background: #008686;
+.register-container input:focus {
+    outline: none;
+    border-color: #764ba2;
+    box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.1);
+}
+
+.register-container button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 0.7rem;
+    padding: 15px;
     border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #005f66;
-    transition: background-color 0.3s;
-}
-
-nav {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-nav a {
-    margin-right: 16px;
-    text-decoration: none;
-    color: #000;
+    border-radius: 10px;
     font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    font-family: inherit;
 }
 
-nav a:hover {
-    color: #008686;
+.register-container button:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.3);
 }

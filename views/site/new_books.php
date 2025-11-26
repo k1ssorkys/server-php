@@ -12,18 +12,16 @@
 <div class="wrapper">
     <div class="sidebar">
         <div class="logo">
-            <img src="/assets/Notebook Bookmark.svg" alt="Логотип библиотеки">
             <span>LIBRARY</span>
         </div>
         <ul class="menu">
-            <li><a href="hello"><img src="/assets/Widget.svg" alt=""><span>Книги</span></a></li>
-<!--            <li><a href="#"><img src="/assets/Chart 2.svg" alt=""><span>Популярные</span></a></li>-->
-            <li><a href="show_reader"><img src="/assets/User Id.svg" alt=""><span>Читатели</span></a></li>
-            <li><a href="issued"><img src="/assets/Unread.svg" alt=""><span>Учёт выдачи</span></a></li>
-            <li><a href="new_reader"><img src="/assets/User Plus Rounded.svg" alt=""><span>Новые читатели</span></a></li>
-            <li><a href="new_books"><img src="/assets/Vector.svg" alt=""><span>Новые книги</span></a></li>
+            <li><a href="hello"><span>📚 Книги</span></a></li>
+            <li><a href="show_reader"><span>👥 Читатели</span></a></li>
+            <li><a href="issued"><span>📋 Учёт выдачи</span></a></li>
+            <li><a href="new_reader"><span>➕ Новые читатели</span></a></li>
+            <li><a href="new_books"><span>🆕 Новые книги</span></a></li>
             <?php if (app()->auth::check() && app()->auth->user()->roleID === 1): ?>
-                <li><a href="new_librarian"><img src="/assets/User Plus Rounded.svg" alt=""><span>Новые библиотекари</span></a></li>
+                <li><a href="new_librarian"><span>👨‍💼 Новые библиотекари</span></a></li>
             <?php endif; ?>
         </ul>
 
