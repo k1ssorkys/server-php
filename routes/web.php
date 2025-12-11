@@ -3,8 +3,8 @@
 use Src\Route;
 
 Route::add('GET', '/hello', [Controller\Site::class, 'hello'])->middleware('auth');
-Route::add(['GET', 'POST'], '/login', [Controller\Site::class, 'login']);
-Route::add('GET', '/logout', [Controller\Site::class, 'logout']);
+Route::add(['GET', 'POST'], '/login', [Controller\AuthController::class, 'login']);
+Route::add('GET', '/logout', [Controller\AuthController::class, 'logout']);
 Route::add('GET', '/go', [Controller\Site::class, 'index']);
 
 Route::add(['GET', 'POST'], '/new_books', [Controller\BookController::class, 'new_books']);

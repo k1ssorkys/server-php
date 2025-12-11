@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,7 +10,7 @@
 <body>
 
 <?php
-// Определяем текущий путь
+
 $uri = explode('?', $_SERVER['REQUEST_URI'])[0];
 $showHeader = in_array($uri, [
     app()->route->getUrl('/login'),
