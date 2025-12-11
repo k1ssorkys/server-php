@@ -6,7 +6,7 @@ return [
     'identity' => \Model\User::class,
     //Классы для middleware
     'routeMiddleware' => [
-        'auth' => \Middlewares\AuthMiddleware::class,
+        'auth' => \AuthMiddleware::class,
     ],
     'validators' => [
         'required' => \Validators\RequireValidator::class,
@@ -15,7 +15,7 @@ return [
         'onlyDigits' => \Validators\OnlyDigitsValidator::class,
     ],
     'routeAppMiddleware' => [
-        'csrf' => \Middlewares\CSRFMiddleware::class,
+        'csrf' => \CSRFMiddleware::class,
         'trim' => \Middlewares\TrimMiddleware::class,
         'specialChars' => \Middlewares\SpecialCharsMiddleware::class,
     ],
