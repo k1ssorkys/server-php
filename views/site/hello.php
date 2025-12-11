@@ -68,7 +68,7 @@
                 <?php else: ?>
                     <tr>
                         <td>—</td>
-                        <td><a href="#" class="book-row">—</a></td>
+                        <td>—</td>
                         <td>—</td>
                         <td>—</td>
                         <td>—</td>
